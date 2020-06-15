@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>--canvas--</title>
+</head>
+<body>
+	<section>
+		<canvas width="500" height="700"></canvas>
+	</section>
+	<script type="text/javascript">
+		const canvas=document.querySelector("canvas");
+		const context=canvas.getContext("2d");
+		context.strokeStyle="skyblue";
+		context.lineWidth=5;
+		context.strokeRect(5,5,200,95)
+	</script>
+</body>
+</html>

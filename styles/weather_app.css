@@ -1,0 +1,64 @@
+.wrapper{
+	width: 95%;
+	margin: 5px auto;
+	text-align: center;
+}
+.item{
+	margin: 20px;
+	padding: 5px;
+}
+.header{
+	background-color: rgb(108,128,147);
+	color: rgb(255,255,255);
+	margin-bottom: 25px;
+}
+h1{
+	font-size: 27px;
+	font-weight: bold;
+	font-family: 'Dancing Script', cursive;
+}
+h2{
+	font-size: 25px;
+}
+
+@media screen and (min-width: 700px){
+	.wrapper{
+		display: flex;
+	}
+	.item{
+		flex-grow: 1;
+	}
+	.body .item{
+		padding-bottom: 40px;
+	}
+}
+.body .item{
+	min-height: 200px;
+	border: 1px solid rgb(108,128,147);
+	box-shadow: 6px 6px 12px;
+	padding-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+
+}
+.body .item h2{
+	color: rgb(255,255,255);
+	background-color: rgb(108,128,147);	
+}
+.body.item:hover{
+	transform: scale(.95,.95);
+}
+
+.body.item{
+	transition: .25s all ease-in;
+}
+.footer{
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	margin-top: 20px;
+}
+p{
+	color: rgb(108,128,147);
+	font-size: 50px;
+}
