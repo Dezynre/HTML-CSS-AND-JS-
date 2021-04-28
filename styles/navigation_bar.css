@@ -1,0 +1,55 @@
+/***NAVIGATION STYLES MENu***/
+nav{
+	background-color: rgb(240,240,240);
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.primary-nav{
+ 	display: flex;
+ 	justify-content: space-around;
+ 	align-items: center;
+ 	flex-grow: 1;
+ 	transition: all 200ms ease-out;
+ 	z-index: 10;
+}
+.primary-nav > li > a{
+	color: rgb(10,10,10);
+	text-decoration: none;
+	font-size: 1.3em;
+}
+.primary-nav > li > a:hover{
+	color: rgb(100,100,100);
+}
+
+.hamburger{
+	border: 1px dashed rgb(10,10,10);
+	padding: .2em;
+	margin: 5em;
+	position: absolute;
+	top: -100em;
+}
+.hamburger:hover{
+	background: rgb(230,230,230);
+}
+.hamburger > div{
+	width: 1.6em;
+	height: .1em;
+	background: rgb(10,10,10);
+	margin: .4em;
+}
+@media screen and (max-width: 768px){
+	.primary-nav{
+		position: absolute;
+		top: -30vh;
+		width: 100vw;
+		flex-direction: column;
+		background: rgb(240,240,240);
+		border-top: 1px solid rgb(200,200,200);
+		z-index: -1;
+	}
+	.hamburger{
+		position: static;
+	}
+}

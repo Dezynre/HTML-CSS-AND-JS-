@@ -8,3 +8,12 @@
 		flex-direction: column;
 	}
 }
+
+
+.another_class{
+	background-color: yellow;
+}
+.pd-y-4{
+	padding-right: 4rem;
+	padding-left: 4rem;
+}

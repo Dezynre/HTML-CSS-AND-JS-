@@ -1,0 +1,246 @@
+
+
+/***NAVIGATION STYLES MENu***/
+body{
+	background-color: rgb(250,250,250);
+	width: 100vw;
+}
+nav{
+	background-color: rgb(50,50,50);
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.primary-nav{
+ 	display: flex;
+ 	justify-content: space-around;
+ 	align-items: center;
+ 	flex-grow: 1;
+ 	transition: all 200ms ease-out;
+ 	z-index: 10;
+}
+.primary-nav > li > a{
+	color: rgb(210,210,210);
+	text-decoration: none;
+	font-size: 1.1em;
+}
+.primary-nav > li > a:hover{
+	color: rgb(250,250,250);
+}
+
+.hamburger{
+	border: 1px dashed rgb(210,210,210);
+	padding: .2em;
+	margin: 5em;
+	position: absolute;
+	top: -100em;
+}
+.hamburger:hover{
+	background: rgb(0,0,0);
+}
+.hamburger > div{
+	width: 1.6em;
+	height: .1em;
+	background: rgb(210,210,210);
+	margin: .4em;
+}
+/* BODY STYLES */
+.wrapper{
+	position: relative;
+	transition: all 200ms ease-out;	
+}
+
+.intro{
+	text-align: center;
+	padding: 3em;
+	height: 55vh;
+}
+.intro h1{
+	border-bottom: 1px solid rgb(50,50,50);
+	width: 70%;
+	margin: 0 auto;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.intro .welcome{
+	padding-top: 2em;
+	font-size: 1.5em;
+}
+.intro .reference{
+	font-style: italic;
+	margin-bottom: 2em;
+}
+.intro .button{
+	padding: .5em;
+	text-decoration: none;
+	border: 1px solid rgb(50,50,50);
+	color: rgb(210,210,210);
+	background-color: rgb(50,50,50);
+	font-weight: bold;
+	transition: all 250ms ease-out;
+}
+.intro .button:hover{
+	background: rgba(50,50,50,0.5);
+	color: rgb(255,255,255);
+}
+.features{
+	background-color: lightblue;
+	text-align: center;
+	padding: 2em;
+}
+
+.features h2{
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: .5em;
+}
+.features div{
+	display: flex;
+}
+.features article{
+	padding: .5em;
+}
+.features .icon{
+	flex-basis: 30%;
+	font-size: 6em;
+}
+.features .verse{
+	flex-basis: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.bold{
+	font-weight: bold;
+}
+.newsletter{
+	padding: 3em;
+	text-align: center;
+}
+.newsletter p{
+	padding: .5em;
+}
+.newsletter input{
+	border: 1px solid rgb(100,100,100);
+	padding: .5em;
+	border-radius: 3px;
+}
+.newsletter button{
+	padding:.35em 2em;
+	border: 1px solid lightblue;
+	background-color: maroon;
+	color: rgb(250,250,250);
+	border-radius: 4px;
+	font-weight: bold;
+}
+footer{
+	background: rgb(50,50,50);
+	width: 100%;
+}
+.social h4{
+	width: 50%;
+	margin: 0 auto;
+	padding: .5em;
+	text-align: center;
+	color: rgb(210,210,210);
+	font-weight: bold;
+	font-size: 1.2em;
+	padding-top: 2em;
+}
+.social section{
+	width: 40%;
+	padding: 1em;
+	margin: 0 auto;
+	text-align: center;
+	color: rgb(210,210,210);
+	display: flex;
+	justify-content: space-around;
+}
+.social i{
+	font-size: 1.5em;
+}
+footer .info{
+	width: 90%;
+	margin: 1em auto;
+	display: flex;
+	justify-content: space-between;
+}
+.info h5{
+	font-weight: bold;
+	color: rgb(210,210,210);
+	font-size: 1.2em;
+}
+.info div{
+	text-align: center;
+}
+.info a{
+	text-decoration: none;
+	color: rgb(210,210,210);
+	font-size: .8em;
+}
+footer .acknowlegement{
+	width: 100%;
+	background-color: rgb(30,30,30);
+	color: rgb(250,250,250);
+	margin: 0 auto;
+	text-align: center;
+	padding: .5em;
+	font-size: .9em;
+	font-weight: bold;
+	font-style: italic;
+}
+/*   RESPONSIVE WEB DESIGN */
+@media screen and (max-width: 768px){
+	.primary-nav{
+		position: absolute;
+		top: -30vh;
+		width: 100vw;
+		flex-direction: column;
+		background: rgb(50,50,50);
+		border-top: 1px solid rgb(100,100,100);
+		z-index: -1;
+	}
+	.primary-nav > li{
+		margin-top: .5em;
+	}
+	.hamburger{
+		position: static;
+	}
+	.features div{
+		flex-direction: column;
+	}
+	.features .icon2{
+		order: -1;
+	}
+	.intro{
+		height: 80vh;
+	}
+	.features .icon{
+		font-size: 4em;
+	}
+	.newsletter form{
+		display: flex;
+		flex-direction: column;
+	}
+	.newsletter form input{
+		margin-bottom: 2em;
+	}
+	.newsletter form button{
+		width: 30%;
+		margin: 0 auto;
+		text-align: center;
+		font-weight: bold;
+	}
+	.social section{
+		width: 70%;
+	}
+	footer .info{
+		flex-direction: column;
+	}
+	.info div{
+		padding: 1em;
+	}
+}

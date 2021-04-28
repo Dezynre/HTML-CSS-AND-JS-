@@ -40,13 +40,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.clearfix:before, .clearfix:after {
-	content: " ";
-	display: table;
-}
-.clearfix:after {
-	clear: both;
-}
+/*Reset Ends here*/
 .container{
 	display: flex;
 	background-color: skyblue;
@@ -93,7 +87,7 @@ RESPONSIVE WEB DESIGN
 .flex-item-3{background-color: rgb(200,200,200);}
 .flex-item-4{background-color: rgb(100,100,100);}
 .flex-item-5{background-color: rgb(200,200,200);}
-.flex-item-6{background-color: rgb(100,100,100);}
+.flex-item-6{background-color: maroon;}
 
 .flex-item:last-child{
 	margin-left: auto;

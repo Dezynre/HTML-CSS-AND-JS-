@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>login</title>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/login_page.css">
+</head>
+<body>
+	<h1>the webicians</h1>
+    <section>
+    	<p class="common_color first">Log in to your account</p>
+		<form action="/login" method="post">
+            <label for="email" class="common_color mgn-top">Email adress</label>
+             <input id="email" name="email" required type="text" value="" class="text_input" placeholder="Email address">
+            <label for="password" class="common_color mgn-top">Password</label>
+             <input id="password" name="password" required type="password" value="" class="text_input" placeholder="Password">
+             <div class="mgn-top">
+             	<input id="remember_me" name="remember_me" type="checkbox">
+            	<label for="remember_me" class="common_color">Keep Me Logged In</label>
+        	</div>
+			<input class="btn mgn-top" id="submit" name="submit" type="submit" value="Log In">
+        </form>
+        <p class="last mgn-top"><span class="grey">New User?<span> <a href="#" class="common_color">Create Your Account Here</a></p>
+    </section>
+    <script src="javascript/login_page.js"></script>
+</body>
+</html>

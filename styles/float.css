@@ -1,0 +1,17 @@
+
+body{
+	background: red;
+}
+
+.wrapper{
+	width: 960px;
+	margin: 0 auto;
+}
+.column{
+	float: left;
+	width: 300px;
+	margin-left: 30px;
+}
+.column:first-child{
+	margin-left: 0;
+}

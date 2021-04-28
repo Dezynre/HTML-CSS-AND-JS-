@@ -1,0 +1,22 @@
+.blue{
+	background: blue;
+}
+.red{
+	background: red;
+}
+.container{
+	height: 100vh;
+	padding: 20px;
+	width: 100vw;
+	background-color: rgb(240,240,240);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.item{
+	padding: 20px;
+}
+.item4{
+	order: -1;
+}

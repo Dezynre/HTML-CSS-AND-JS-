@@ -1,0 +1,72 @@
+*{
+	font-family: "Ubuntu";
+}
+
+body{
+	background-color: rgb(225,225,225);
+	width: 100vw;
+}
+.ballot-paper{
+	width: 85%;
+	margin: 0 auto;
+	padding: 3em;
+	margin-top: 3em;
+	background: rgb(245,245,245);
+	border-radius: 3px;
+}
+.ballot-paper h1{
+	font-size: 1.2em;
+	padding: .5em;
+	color: rgb(7,145,145);
+}
+.ballot-paper .candidate{
+	padding: 2em;
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid rgb(7,145,145);
+}
+.ballot-paper .candidate .name{
+	flex-basis: 60%;
+}
+.ballot-paper .candidate .tick{
+	flex-basis: 15%;
+}
+.btn{
+	margin: 2em 0;
+	background: rgb(7,145,145);
+	border: 1px solid rgb(7,145,145);
+	color: rgb(245,245,245);
+	padding: 1em;
+	font-weight: bold;
+}
+#confirm{
+	position: absolute;
+	width: 70%;
+	top: -20em;
+	left: 4em;
+	transition: all 300ms ease-out;
+	margin: auto;
+	background:rgb(15,15,15);
+	text-align: center;
+	padding: 5em;
+	border-radius: 3px;
+	color: rgb(250,250,250);
+}
+#confirm p{
+	font-weight: bold;
+	color: rgb(235,235,235);
+}
+#confirm .buttons{
+	display: flex;
+	width: 70%;
+	margin: 1em auto;
+	justify-content: space-between;
+}
+#confirm .buttons button{
+	padding: .3em 1em;
+	font-weight: bold;
+	background: rgb(235,235,235);
+	color: rgb(15,15,15);
+	border: 1px solid rgb(235,235,235);
+	border-radius: 2px;
+}

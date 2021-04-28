@@ -1,9 +1,8 @@
-let para=document.createElement('p');
-document.body.appendChild(para);
+const myNode=document.querySelector('.item1');
 
-let text=document.createTextNode("lorem	lore bbbbbbbbbbbbbbbbbbb");
-para.appendChild(text)
+const nodeClasses=myNode.classList;
 
-document.body.getElementsByTagName("a")[1].href="www.google.com";
+nodeClasses.add('another_class');
+nodeClasses.add('pd-y-4');
 
-document.getElementById("par").style.backgroundColor="skyblue";
+console.log(nodeClasses);

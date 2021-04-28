@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>login</title>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/kusa_login.css">
+</head>
+<body>
+    <section>
+    	<p class="common_color first">Log in to your account</p>
+		<form action="/login" method="post">
+            <label for="email" class="common_color mgn-top">Email adress</label>
+             <input id="email" name="email" required type="text" value="" class="text_input" placeholder="Email address" required>
+            <label for="password" class="common_color mgn-top">Password</label>
+             <input id="password" name="password" required type="password" value="" class="text_input" placeholder="Password" required>
+             <div class="mgn-top">
+             	<input id="remember_me" name="remember_me" type="checkbox">
+            	<label for="remember_me" class="common_color">Keep Me Logged In</label>
+        	</div>
+			<input class="btn mgn-top" id="submit" name="submit" type="submit" value="OK">
+        </form>
+        <p class="last mgn-top"><span class="grey">Forgot Password?<span> <a href="#" class="common_color">Follow this link to reset</a></p>
+    </section>
+    <script src="javascript/kusa_login.js"></script>
+</body>
+</html>
